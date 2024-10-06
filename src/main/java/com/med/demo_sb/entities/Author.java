@@ -16,7 +16,7 @@ public class Author extends BaseEntity {
     /*@Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)*/
     //@SequenceGenerator(name = "auth_seq", sequenceName = "auth_seq", allocationSize = 1)
-    private Integer id;
+    //private Integer id;
     @Column(nullable = false, length = 10)
     private String fname;
     @Column(nullable = false, length = 10)

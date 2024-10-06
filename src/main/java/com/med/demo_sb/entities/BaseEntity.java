@@ -17,10 +17,12 @@ import java.time.LocalDateTime;
 @SuperBuilder
 @MappedSuperclass
 // is used to indicate that a class will not be directly mapped to a database table,
-// but that its properties or fields can be inherited by other classes which will be mapped to tables.
+// but that its properties or fields can be inherited by other classes which will
+// be mapped to tables.
 public class BaseEntity {
     @Id
     @GeneratedValue
+    private Integer id;
     private LocalDateTime createdAt;
     private LocalDateTime updatedAt;
     private String createdBy;
